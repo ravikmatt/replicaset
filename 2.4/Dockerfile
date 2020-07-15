@@ -63,7 +63,7 @@ COPY ./s2i/bin/ $STI_SCRIPTS_PATH
 COPY ./root /
 
 # Reset permissions of filesystem to default values
-RUN /usr/libexec/httpd-prepare && rpm-file-permissions
+#RUN /usr/libexec/httpd-prepare && rpm-file-permissions
 
 USER 1001
 
